@@ -1,0 +1,12 @@
+// Set the body and the html to have no padding, borders or margin.
+html, body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  background-color: blue;
+}
+
+// Settings that style the container of the page that is contained in a div.
+#SocialLinksDiv{
+  background-color: blue;
+}
