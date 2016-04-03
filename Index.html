@@ -8,13 +8,13 @@
  			<script src=	"http://html5shiv.googlecode.com/svn/trunk/html5.js">
  			</script>
 		<![endif]-->
-		
+
 		<script type="text/javascript" src="./Plugins/js/bootstrap.js"></script>
     <script type="text/javascript" src="./WebsiteJS.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="./css/WebsiteCSS.css" title="Default Styles"></link>
-    <link rel="stylesheet" type="text/css" href="./Plugins/css/bootstrap.css" title="Default Styles"></link>
-    <link rel="stylesheet" type="text/css" href="./Plugins/css/bootstrap-theme.css" title="Default Styles"></link>
+    <link rel="stylesheet" type="text/css" href="./Plugins/css/bootstrap.css" title=""></link>
+    <link rel="stylesheet" type="text/css" href="./Plugins/css/bootstrap-theme.css" title=""></link>
+		<link rel="stylesheet" type="text/css" href="./css/WebsiteCSS.css" title=""></link>
 		<title> Nakima's Site</title>
 	</head>
 
@@ -27,8 +27,8 @@
 						<nav class="navbar navbar-inverse navbar-default navbar-fixed-top" id="MainNavBar" role="navigation">
 							<div class="container-fluid">
 								<ul class="nav navbar-nav">
-									<li ><a href="#" role="">Home</a></li>
-									<li class="active"><a href="CVPage.html">CV</a></li>
+									<li class="active"><a href="index.html" role="">Home</a></li>
+									<li ><a href="CVPage.html">Portfolio</a></li>
 									<li><a href="#">Projects</a></li>
 									<li><a href="Contact.html">Contact</a></li>
 								</ul>
@@ -42,29 +42,33 @@
 
 			<!-- This aside will hold the side bar consisting of my photot and my social links. -->
 			<aside class="sidebar" id="Sidebar">
-				<div id="MugshotSection"  role="img">
+				<div id="MugshotSection" role="img">
 					<img src="Images/MyPhoto.jpg" alt="Photo cannot be displayed" title="N.S.L" id="N-S-L_Photo"/>
-					<label for="N-S-L_Photo">N.S.L</label>
 				</div>
-				<div id="SocialLinksDiv" role="SocialLinks">
+				<div class="usernameDiv">
+						<label id="username" class="label label-default" for="N-S-L_Photo">N.S.L</label>
+				</div>
+				<div id="SocialLinksDiv" class="ShareButtons" role="SocialLinks">
 						<nav id="SocialNavigation" role="SocialNavigation">
-							<ul id="SocialLinkButton">
-								<li><a href="#" role="LinkedIn">LinkedIn</a></li>
-								<li><a href="#" role="GitHub">GitHub</a></li>
-								<li><a href="#" role="Slack">Slack</a></li>
-								<li><a href="#" role="Instagram">Instagram</a></li>
+							<ul id="SocialLinkButton" class="nav nav-pills">
+								<li><a href="https://uk.linkedin.com/in/nakima-st-lewis-a86a0349" role="LinkedIn"><img src="./Images/linkedin.png" alt="LinkedIn" /></a></li>
+								<li><a href="https://github.com/N-S-L" role="GitHub"><img src="./Images/GitHub-Mark.png" alt="GitHub" /></a></li>
 							</ul>
 						</nav>
 				</div>
 			</aside>
 
 			<main id="MainContent" role="main">
-				<section role="Summary">
-					<h1> My Summary</h1>
-					<p>
-						I am an enthusiastic, reliable, and determined individual who has a passion for technology. I have completed a BSc in Computer science for which I gained a 2:1 and have since been training as a junior software tester at Sparta Global. My training covers a range of topics some of which are business skills, testing techniques, web development, and SQL.
-					</p>
-				</section>
+				<div class="MainSummary">
+					<section role="Summary">
+						<div class="InsideSummary">
+							<h1> My Summary</h1>
+							<p>
+								I am an enthusiastic, reliable, and determined individual who has a passion for technology. I have completed a BSc in Computer science for which I gained a 2:1 and have since been training as a junior software tester at Sparta Global. My training covers a range of topics some of which are business skills, testing techniques, web development, and SQL.
+							</p>
+						</div>
+					</section>
+				</div>
 			</main>
 
 			<footer>

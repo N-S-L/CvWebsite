@@ -1,23 +1,84 @@
-<form method="POST" name="Contact" action="http://lacedeamon.spartaglobal.com/contactform" role="form">
-  <section id="ContactForm">
-    <h1>Contact Form</h1>
-    <p>
-        Please type in your details to leave a comment and I will get back to you as soon as possible.
-    </p>
-    <p>
-        <label for="name">Name: </label><input id="name" type="text" name="name" value="">
-    </p>
-    <p>
-      <label for="email">Email: </label><input id="email" type="email" name="email" value="">
-    </p>
-    <p>
-      <input type="hidden" name="addressee" value="Nakima"></input>
-    </p>
-    <p>
-      <label for="">Message: </label><textarea name="message" id="message" rows="8" cols="40"></textarea>
-    </p>
-    <p>
-      <input type="submit" value="Submit Message">
-    </p>
-  </section>
-</form>
+<!DOCTYPE html>
+<html>
+  <head>
+    <META http-equiv="content-type" content="text/html; charset=utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+  <!--[if IE]>
+    <script src=	"http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script>
+  <![endif]-->
+
+  <script type="text/javascript" src="./Plugins/js/bootstrap.js"></script>
+  <script type="text/javascript" src="./WebsiteJS.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="./Plugins/css/bootstrap.css" title=""></link>
+  <link rel="stylesheet" type="text/css" href="./Plugins/css/bootstrap-theme.css" title=""></link>
+  <link rel="stylesheet" type="text/css" href="./css/WebsiteCSS.css" title=""></link>
+
+  <title> Nakima's Site</title>
+</head>
+  <body>
+    <!-- This is the header of the site that will include the site nav and such.  -->
+    <div class="navbar-header">
+        <header id="MainSiteHeader" role="banner">
+          <!-- This is a nav bar allowing the user to navigate around the main site. -->
+          <nav class="navbar navbar-inverse navbar-default navbar-fixed-top" id="MainNavBar" role="navigation">
+            <div class="container-fluid">
+              <ul class="nav navbar-nav">
+                <li ><a href="index.html" role="">Home</a></li>
+                <li ><a href="CVPage.html">CV</a></li>
+                <li><a href="#">Projects</a></li>
+                <li class="active"><a href="Contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+
+        <!-- The site name / logo goes here -->
+        <!-- The site breadcrumb goes here -->
+      </header>
+    </div>
+
+    <!-- This aside will hold the side bar consisting of my photot and my social links. -->
+    <aside class="sidebar" id="Sidebar">
+      <div id="MugshotSection" role="img">
+        <img src="Images/MyPhoto.jpg" alt="Photo cannot be displayed" title="N.S.L" id="N-S-L_Photo"/>
+      </div>
+      <div class="usernameDiv">
+          <label id="username" class="label label-default" for="N-S-L_Photo">N.S.L</label>
+      </div>
+      <div id="SocialLinksDiv" class="ShareButtons" role="SocialLinks">
+          <nav id="SocialNavigation" role="SocialNavigation">
+            <ul id="SocialLinkButton" class="nav nav-pills">
+              <li><a href="https://uk.linkedin.com/in/nakima-st-lewis-a86a0349" role="LinkedIn"><img src="./Images/linkedin.png" alt="LinkedIn" /></a></li>
+              <li><a href="https://github.com/N-S-L" role="GitHub"><img src="./Images/GitHub-Mark.png" alt="GitHub" /></a></li>
+            </ul>
+          </nav>
+      </div>
+    </aside>
+
+    <form method="POST" name="Contact" action="http://lacedeamon.spartaglobal.com/contactform" role="form">
+      <section id="ContactForm">
+        <h1>Contact Form</h1>
+        <p>
+          Please type in your details to leave a comment and I will get back to you as soon as possible.
+        </p>
+        <p>
+          <label for="name">Name: </label><input id="name" type="text" name="name" value="">
+        </p>
+        <p>
+          <label for="email">Email: </label><input id="email" type="email" name="email" value="">
+        </p>
+        <p>
+          <input type="hidden" name="addressee" value="Nakima"></input>
+        </p>
+        <p>
+          <label for="">Message: </label><textarea name="message" id="message" rows="8" cols="40"></textarea>
+        </p>
+        <p>
+          <input type="submit" value="Submit Message">
+        </p>
+      </section>
+    </form>
+  </body>
+</html>
