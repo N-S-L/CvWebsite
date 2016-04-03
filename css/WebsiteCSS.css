@@ -1,0 +1,25 @@
+// Set the body and the html to have no padding, borders or margin.
+body {
+  margin: 0px;
+  padding: 0px;
+  padding-top: 70px;
+  border: 0px;
+}
+
+// Style the main navigation to be displayed at the top of the page.
+.MainNavigation{
+  display: inline-block !important;
+  font-size: 18px;
+}
+
+// Set the sidebar to be a certain width and to always display on the left.
+.sidebar{
+  min-width: 30px;
+  max-width: 90px;
+}
+
+
+// Size the picture to 20% of width.
+#N-S-L_Photo{
+  max-width: 10%;
+}

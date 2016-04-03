@@ -8,32 +8,40 @@
  			<script src=	"http://html5shiv.googlecode.com/svn/trunk/html5.js">
  			</script>
 		<![endif]-->
+		
+		<script type="text/javascript" src="./Plugins/js/bootstrap.js"></script>
+    <script type="text/javascript" src="./WebsiteJS.js"></script>
 
-		<script type="text/javascript" src="Scripts/WebsiteJS.js"></script>
-		<link rel="stylesheet" type="text/css" href="WebsiteCSS.css" media="screen, projection" title="no title" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/WebsiteCSS.css" title="Default Styles"></link>
+    <link rel="stylesheet" type="text/css" href="./Plugins/css/bootstrap.css" title="Default Styles"></link>
+    <link rel="stylesheet" type="text/css" href="./Plugins/css/bootstrap-theme.css" title="Default Styles"></link>
 		<title> Nakima's Site</title>
 	</head>
 
 	<body>
 		<div id="SiteContainer" class="SiteContainer">
 			<!-- This is the header of the site that will include the site nav and such.  -->
-			<header id="MainSiteHeader" role="banner">
-				<!-- This is a nav bar allowing the user to navigate around the main site. -->
-				<nav id="MainNavBar" role="navigation">
-					<ul>
-						<li><a href="#" role="">Home</a></li>
-						<li><a href="CVPage.html">CV</a></li>
-						<li><a href="#">Projects</a></li>
-						<li><a href="Contact.html">Contact</a></li>
-					</ul>
-				</nav>
+			<div class="navbar-header">
+					<header id="MainSiteHeader" role="banner">
+						<!-- This is a nav bar allowing the user to navigate around the main site. -->
+						<nav class="navbar navbar-inverse navbar-default navbar-fixed-top" id="MainNavBar" role="navigation">
+							<div class="container-fluid">
+								<ul class="nav navbar-nav">
+									<li ><a href="#" role="">Home</a></li>
+									<li class="active"><a href="CVPage.html">CV</a></li>
+									<li><a href="#">Projects</a></li>
+									<li><a href="Contact.html">Contact</a></li>
+								</ul>
+							</div>
+						</nav>
 
-				<!-- The site name / logo goes here -->
-				<!-- The site breadcrumb goes here -->
-			</header>
+					<!-- The site name / logo goes here -->
+					<!-- The site breadcrumb goes here -->
+				</header>
+			</div>
 
 			<!-- This aside will hold the side bar consisting of my photot and my social links. -->
-			<aside class="" id="Sidebar">
+			<aside class="sidebar" id="Sidebar">
 				<div id="MugshotSection"  role="img">
 					<img src="Images/MyPhoto.jpg" alt="Photo cannot be displayed" title="N.S.L" id="N-S-L_Photo"/>
 					<label for="N-S-L_Photo">N.S.L</label>
